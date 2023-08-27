@@ -51,7 +51,7 @@ bool NVSEPlugin_Query(const NVSEInterface* nvse, PluginInfo* info)
 {
 	info->infoVersion = PluginInfo::kInfoVersion;
 	info->name = "DoF Fix";
-	info->version = 1;
+	info->version = 110;
 
 	return true;
 }
@@ -78,6 +78,9 @@ bool NVSEPlugin_Load(NVSEInterface* nvse) {
 		SafeWriteBuf(0x870F28, (void*)"\xEB\x71\x0F\x84\xB1\x00\x00\x00", 8);
 		SafeWriteBuf(0x870FC2, (void*)"\x80\x7D\xED\x00\xE9\x5F\xFF\xFF\xFF", 9);
 		SafeWrite8(0x00870F7A, 0x66);
+
+		// Use 16b format for blur RTs
+		SafeWrite8(0xB6CBBD + 2, 0x71);
 	}
 
 	return true;
