@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="..\Shared\SafeWrite\SafeWrite.cpp">
+      <Filter>Shared\SafeWrite</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Shared\SafeWrite\SafeWrite.hpp">
+      <Filter>Shared\SafeWrite</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Utils\AddressPtr.hpp">
+      <Filter>Shared\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nvse\nvse\nvse_version.h">
+      <Filter>nvse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\nvse\nvse\PluginAPI.h">
+      <Filter>nvse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Defines.hpp">
+      <Filter>Shared</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{489fd017-cb50-4cd3-a287-dc2a48b8bcc6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\SafeWrite">
+      <UniqueIdentifier>{c7435e98-462f-4f98-bf9a-6a86ecef9ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Utils">
+      <UniqueIdentifier>{53216121-f23d-4831-a666-f981f5dd8634}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="nvse">
+      <UniqueIdentifier>{a03d4eaf-c390-452c-8c69-61e51ec61e7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
